@@ -1,0 +1,12 @@
+//
+//  module.modulemap
+//  Mats Engine
+//
+//  Created by Mathias Dietrich on 31.12.23.
+//
+
+module cengine {
+    header "Main.hpp"
+    requires cplusplus
+    export *
+}
