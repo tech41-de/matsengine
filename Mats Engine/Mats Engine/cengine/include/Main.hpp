@@ -13,7 +13,7 @@
 
 using namespace std;
 
-int cxxFunction(int n);
+int setupEngine();
 
 
 #endif /* Main_hpp */

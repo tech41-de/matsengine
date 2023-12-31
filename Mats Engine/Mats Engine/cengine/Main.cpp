@@ -7,7 +7,7 @@
 
 #include "Main.hpp"
 
-int cxxFunction(int n) {
-    return n;
+int setupEngine() {
+    return 0;
 }
 

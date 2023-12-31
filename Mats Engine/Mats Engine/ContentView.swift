@@ -12,6 +12,7 @@ import cengine
 struct ContentView: View {
     
     // let main = Main()
+    @State var debug = "starting"
     
     func testCall(){
     }
@@ -21,9 +22,12 @@ struct ContentView: View {
             Image(systemName: "globe")
                 .imageScale(.large)
                 .foregroundStyle(.tint)
-            Text("Hello, world!")
+            Text("\(debug)")
         }
         .padding()
+        .onAppear(){
+            debug = " engine says \(setupEngine())"
+        }
     }
 }
 
