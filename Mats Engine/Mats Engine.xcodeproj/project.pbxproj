@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		400B471B2B42B10E00C71023 /* vger in Frameworks */ = {isa = PBXBuildFile; productRef = 400B471A2B42B10E00C71023 /* vger */; };
+		407DAE7C2B41B03C003ABD60 /* Renderer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 407DAE7A2B41B03C003ABD60 /* Renderer.cpp */; };
+		407DAE802B41B6EA003ABD60 /* RendererAdapter.mm in Sources */ = {isa = PBXBuildFile; fileRef = 407DAE7F2B41B6EA003ABD60 /* RendererAdapter.mm */; };
+		407DAE832B41BDF9003ABD60 /* MetalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407DAE822B41BDF9003ABD60 /* MetalView.swift */; };
+		407DAE852B41BE1F003ABD60 /* ViewRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407DAE842B41BE1F003ABD60 /* ViewRepresentable.swift */; };
+		407DAE872B41BEA0003ABD60 /* Renderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407DAE862B41BEA0003ABD60 /* Renderer.swift */; };
+		407DAE892B41BEEA003ABD60 /* Content2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407DAE882B41BEEA003ABD60 /* Content2.swift */; };
 		4098DC462B4193E100733E66 /* Mats_EngineApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4098DC452B4193E100733E66 /* Mats_EngineApp.swift */; };
 		4098DC482B4193E100733E66 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4098DC472B4193E100733E66 /* ContentView.swift */; };
 		4098DC4A2B4193E300733E66 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4098DC492B4193E300733E66 /* Assets.xcassets */; };
@@ -15,10 +22,18 @@
 		4098DC5A2B41953400733E66 /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4098DC592B41953400733E66 /* Metal.framework */; };
 		4098DC5C2B41953C00733E66 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4098DC5B2B41953C00733E66 /* AVFoundation.framework */; };
 		4098DC5E2B41956A00733E66 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4098DC5D2B41956A00733E66 /* Foundation.framework */; };
-		4098DC622B41976900733E66 /* Main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4098DC602B41976900733E66 /* Main.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		407DAE7A2B41B03C003ABD60 /* Renderer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Renderer.cpp; sourceTree = "<group>"; };
+		407DAE7B2B41B03C003ABD60 /* Renderer.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Renderer.hpp; sourceTree = "<group>"; };
+		407DAE7E2B41B6EA003ABD60 /* RendererAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RendererAdapter.h; sourceTree = "<group>"; };
+		407DAE7F2B41B6EA003ABD60 /* RendererAdapter.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = RendererAdapter.mm; sourceTree = "<group>"; };
+		407DAE812B41B796003ABD60 /* MatsEngine-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MatsEngine-Bridging-Header.h"; sourceTree = "<group>"; };
+		407DAE822B41BDF9003ABD60 /* MetalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetalView.swift; sourceTree = "<group>"; };
+		407DAE842B41BE1F003ABD60 /* ViewRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewRepresentable.swift; sourceTree = "<group>"; };
+		407DAE862B41BEA0003ABD60 /* Renderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Renderer.swift; sourceTree = "<group>"; };
+		407DAE882B41BEEA003ABD60 /* Content2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Content2.swift; sourceTree = "<group>"; };
 		4098DC422B4193E100733E66 /* Mats Engine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mats Engine.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4098DC452B4193E100733E66 /* Mats_EngineApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mats_EngineApp.swift; sourceTree = "<group>"; };
 		4098DC472B4193E100733E66 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -28,8 +43,6 @@
 		4098DC592B41953400733E66 /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Metal.framework; path = System/Library/Frameworks/Metal.framework; sourceTree = SDKROOT; };
 		4098DC5B2B41953C00733E66 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		4098DC5D2B41956A00733E66 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		4098DC602B41976900733E66 /* Main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Main.cpp; sourceTree = "<group>"; };
-		4098DC612B41976900733E66 /* Main.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Main.hpp; sourceTree = "<group>"; };
 		4098DC652B41A24D00733E66 /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -42,6 +55,7 @@
 				4098DC5C2B41953C00733E66 /* AVFoundation.framework in Frameworks */,
 				4098DC5A2B41953400733E66 /* Metal.framework in Frameworks */,
 				4098DC582B41952C00733E66 /* MetalKit.framework in Frameworks */,
+				400B471B2B42B10E00C71023 /* vger in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,8 +65,8 @@
 		401EFF4D2B41A784007DB272 /* include */ = {
 			isa = PBXGroup;
 			children = (
+				407DAE7B2B41B03C003ABD60 /* Renderer.hpp */,
 				4098DC652B41A24D00733E66 /* module.modulemap */,
-				4098DC612B41976900733E66 /* Main.hpp */,
 			);
 			path = include;
 			sourceTree = "<group>";
@@ -77,11 +91,18 @@
 		4098DC442B4193E100733E66 /* Mats Engine */ = {
 			isa = PBXGroup;
 			children = (
+				407DAE812B41B796003ABD60 /* MatsEngine-Bridging-Header.h */,
+				407DAE7E2B41B6EA003ABD60 /* RendererAdapter.h */,
+				407DAE7F2B41B6EA003ABD60 /* RendererAdapter.mm */,
 				4098DC642B41A0F800733E66 /* cengine */,
 				4098DC452B4193E100733E66 /* Mats_EngineApp.swift */,
 				4098DC472B4193E100733E66 /* ContentView.swift */,
+				407DAE862B41BEA0003ABD60 /* Renderer.swift */,
 				4098DC492B4193E300733E66 /* Assets.xcassets */,
 				4098DC4B2B4193E300733E66 /* Preview Content */,
+				407DAE822B41BDF9003ABD60 /* MetalView.swift */,
+				407DAE842B41BE1F003ABD60 /* ViewRepresentable.swift */,
+				407DAE882B41BEEA003ABD60 /* Content2.swift */,
 			);
 			path = "Mats Engine";
 			sourceTree = "<group>";
@@ -109,7 +130,7 @@
 			isa = PBXGroup;
 			children = (
 				401EFF4D2B41A784007DB272 /* include */,
-				4098DC602B41976900733E66 /* Main.cpp */,
+				407DAE7A2B41B03C003ABD60 /* Renderer.cpp */,
 			);
 			path = cengine;
 			sourceTree = "<group>";
@@ -130,6 +151,9 @@
 			dependencies = (
 			);
 			name = "Mats Engine";
+			packageProductDependencies = (
+				400B471A2B42B10E00C71023 /* vger */,
+			);
 			productName = "Mats Engine";
 			productReference = 4098DC422B4193E100733E66 /* Mats Engine.app */;
 			productType = "com.apple.product-type.application";
@@ -159,6 +183,9 @@
 				Base,
 			);
 			mainGroup = 4098DC392B4193E100733E66;
+			packageReferences = (
+				400B47192B42B10E00C71023 /* XCRemoteSwiftPackageReference "vger" */,
+			);
 			productRefGroup = 4098DC432B4193E100733E66 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -185,9 +212,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4098DC622B41976900733E66 /* Main.cpp in Sources */,
+				407DAE7C2B41B03C003ABD60 /* Renderer.cpp in Sources */,
 				4098DC482B4193E100733E66 /* ContentView.swift in Sources */,
+				407DAE872B41BEA0003ABD60 /* Renderer.swift in Sources */,
+				407DAE832B41BDF9003ABD60 /* MetalView.swift in Sources */,
+				407DAE802B41B6EA003ABD60 /* RendererAdapter.mm in Sources */,
 				4098DC462B4193E100733E66 /* Mats_EngineApp.swift in Sources */,
+				407DAE892B41BEEA003ABD60 /* Content2.swift in Sources */,
+				407DAE852B41BE1F003ABD60 /* ViewRepresentable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -330,9 +362,10 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				HEADER_SEARCH_PATHS = (
-					"metal-cpp-extensions",
-					"metal-cpp",
+					"metal-cpp-extensions/**",
+					"metal-cpp/**",
 					"cengine/include/**",
+					"/Users/mat/gitroot/metal-cpp/**",
 				);
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Uses Mic";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -354,7 +387,7 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_INCLUDE_PATHS = "\"./Mats Engine/cengine/include\"";
-				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Mats Engine/MatsEngine-Bridging-Header.h";
 				SWIFT_OBJC_INTEROP_MODE = objcxx;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -376,9 +409,10 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				HEADER_SEARCH_PATHS = (
-					"metal-cpp-extensions",
-					"metal-cpp",
+					"metal-cpp-extensions/**",
+					"metal-cpp/**",
 					"cengine/include/**",
+					"/Users/mat/gitroot/metal-cpp/**",
 				);
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Uses Mic";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -400,7 +434,7 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_INCLUDE_PATHS = "\"./Mats Engine/cengine/include\"";
-				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Mats Engine/MatsEngine-Bridging-Header.h";
 				SWIFT_OBJC_INTEROP_MODE = objcxx;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -430,6 +464,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		400B47192B42B10E00C71023 /* XCRemoteSwiftPackageReference "vger" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/audulus/vger.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		400B471A2B42B10E00C71023 /* vger */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 400B47192B42B10E00C71023 /* XCRemoteSwiftPackageReference "vger" */;
+			productName = vger;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 4098DC3A2B4193E100733E66 /* Project object */;
 }

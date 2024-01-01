@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "vger",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/audulus/vger.git",
+      "state" : {
+        "revision" : "e790da7ee3dafff2e47d63e6416de2c8cb0692a8",
+        "version" : "1.0.1"
+      }
+    }
+  ],
+  "version" : 2
+}
